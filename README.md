@@ -31,6 +31,7 @@ Publish the website in the given URL.
 
 # PROGRAM :
 views.py
+~~~
 from django.shortcuts import render
 
 def index(request):
@@ -58,9 +59,9 @@ def index(request):
         print("GET request received; no calculation performed.")
     
     return render(request, 'index.html', {'result': result})
-
+~~~
 index.html
-
+~~~
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,7 +179,7 @@ index.html
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
+~~~
 # SERVER SIDE PROCESSING:
 ![Screenshot 2024-12-06 190115](https://github.com/user-attachments/assets/90e56033-17a9-444e-aecb-3e3f003666b9)
 
